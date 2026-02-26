@@ -4,6 +4,6 @@ export type AuthState = {
 };
 
 export type AuthContextValue = AuthState & {
-  setToken: (token: string) => void;
+  setTokens: (access: string, refresh: string) => void;
   logout: () => void;
 };
